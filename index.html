@@ -8,18 +8,62 @@
 </head>
 <body>
    <div id="root">
-
    </div>
-   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-<script >
-//     function App(){
-//         return (
-//         <h1>Sally Student</h1>
-//         );
-//     }
-//   const appRoot = document.querySelector('#root');
-//   ReactDOM.render(, appRoot);
+   <script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js"
+  >
+</script>
+   <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script type="text/babel">
+    function App(){
+        return (
+            <header role="banner">
+    <h1>Sally Student</h1>
+</header>
+<div>
+    Email:<a href="mailto:bowchicawowow@yuhoo.com" target="_blank">SallyStudent@yourheart</a><br />
+    710-652-3444
+</div>
+
+<main role="main">
+  <section>
+    <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Picture of Sally Student(default)">
+    <h3>Education:</h3>
+    <div>
+    <p>Caliornia State University of Fullertion 2006-2010</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Employement History</h3>
+    <p>Disneyland Resort September 2000-2008</p>
+    <ul>
+      <li>
+        <figure>
+          <figcaption>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+
+    <p>Walt Disney Resort Decemeber 2009-present</p>
+    <ul>
+      <li>
+        <figure>
+          <figcaption>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          </figcaption>
+        </figure> 
+      </li>
+    </ul>
+  </section>
+</main>
+        );
+    }
+  const appRoot = document.querySelector('#root');
+  ReactDOM.render(<App />, appRoot);
 </script>
 </body>
 </html>
